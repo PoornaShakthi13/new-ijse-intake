@@ -2,8 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXComboBox?>
-<?import com.jfoenix.controls.JFXDatePicker?>
-<?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Label?>
@@ -40,12 +38,12 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="184.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth :">
+      <Text layoutX="230.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC :">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="209.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender :">
+      <Text layoutX="223.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -53,8 +51,6 @@
       <JFXTextField fx:id="txtStuentName" focusColor="WHITE" layoutX="309.0" layoutY="135.0" prefHeight="25.0" prefWidth="173.0" unFocusColor="BLACK" />
       <JFXTextField fx:id="txtAddress" focusColor="WHITE" layoutX="309.0" layoutY="173.0" prefHeight="25.0" prefWidth="173.0" unFocusColor="BLACK" />
       <JFXTextField fx:id="txtContact" focusColor="WHITE" layoutX="309.0" layoutY="216.0" prefHeight="25.0" prefWidth="173.0" unFocusColor="BLACK" />
-      <JFXRadioButton fx:id="rdoMale" layoutX="329.0" layoutY="331.0" onAction="#rdoGenderOnAction" text="Male" />
-      <JFXRadioButton fx:id="rdoFemale" layoutX="417.0" layoutY="331.0" onAction="#rdoGenderOnAction" text="Female" />
       <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="465.0" layoutY="375.0" onAction="#btnDeleteOnAction" prefHeight="41.0" prefWidth="183.0" style="-fx-background-color: #2bfbff;" text="Delete Student">
          <graphic>
             <FontAwesomeIconView fill="RED" glyphName="TRASH" size="15" wrappingWidth="20.785714149475098" />
@@ -72,7 +68,6 @@
          </graphic>
       </JFXButton>
       <JFXComboBox fx:id="cmbStudent" focusColor="BLACK" layoutX="311.0" layoutY="92.0" prefHeight="25.0" prefWidth="173.0" unFocusColor="BLACK" />
-      <JFXDatePicker fx:id="Date" layoutX="310.0" layoutY="264.0" />
       <JFXButton fx:id="btnAddStudent" buttonType="RAISED" layoutX="55.0" layoutY="375.0" onAction="#btnAddStudentOnAction" prefHeight="41.0" prefWidth="183.0" style="-fx-background-color: #2bfbff;" text="Add Student">
          <graphic>
             <FontAwesomeIconView glyphName="PLUS" size="15" wrappingWidth="23.0" />
@@ -85,5 +80,7 @@
             <Font name="System Bold" size="36.0" />
          </font>
       </Text>
+      <JFXTextField fx:id="txtNic" focusColor="WHITE" layoutX="309.0" layoutY="263.0" prefHeight="25.0" prefWidth="173.0" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtEmail" focusColor="WHITE" layoutX="311.0" layoutY="316.0" prefHeight="25.0" prefWidth="173.0" unFocusColor="BLACK" />
    </children>
 </AnchorPane>

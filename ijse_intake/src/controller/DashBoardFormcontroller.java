@@ -16,7 +16,7 @@ public class DashBoardFormcontroller {
         Stage stage = (Stage) btnLogIn.getScene().getWindow();
         stage.close();
 
-        Parent parent = FXMLLoader.load(getClass().getResource("../view/ManageStudentForm.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../view/StudentForm.fxml"));
         Stage stage2 = new Stage();
         stage2.setScene(new Scene(parent));
         stage2.setResizable(false);
