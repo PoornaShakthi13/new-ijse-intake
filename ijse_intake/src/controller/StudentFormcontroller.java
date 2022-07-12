@@ -14,6 +14,7 @@ public class StudentFormcontroller {
     public JFXButton btnUpdate;
     public JFXComboBox cmbStudent;
     public JFXDatePicker Date;
+    public JFXButton btnAddStudent;
 
     public void rdoGenderOnAction(ActionEvent actionEvent) {
     }
@@ -25,5 +26,8 @@ public class StudentFormcontroller {
     }
 
     public void btnUpdateOnAction(ActionEvent actionEvent) {
+    }
+
+    public void btnAddStudentOnAction(ActionEvent actionEvent) {
     }
 }

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="451.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentFormcontroller">
+   <children>
+      <ImageView fitHeight="457.0" fitWidth="700.0" layoutY="-6.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@assests/17973908.jpg" />
+         </image></ImageView>
+      <Label layoutX="169.0" layoutY="72.0" opacity="0.17" prefHeight="314.0" prefWidth="339.0" style="-fx-background-color: ffffff;" textFill="WHITE" />
+      <Text layoutX="195.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="182.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="196.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="194.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Contact :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="184.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="209.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtStuentName" focusColor="WHITE" layoutX="309.0" layoutY="135.0" prefHeight="25.0" prefWidth="173.0" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtAddress" focusColor="WHITE" layoutX="309.0" layoutY="173.0" prefHeight="25.0" prefWidth="173.0" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtContact" focusColor="WHITE" layoutX="309.0" layoutY="216.0" prefHeight="25.0" prefWidth="173.0" unFocusColor="BLACK" />
+      <JFXRadioButton fx:id="rdoMale" layoutX="329.0" layoutY="331.0" onAction="#rdoGenderOnAction" text="Male" />
+      <JFXRadioButton fx:id="rdoFemale" layoutX="417.0" layoutY="331.0" onAction="#rdoGenderOnAction" text="Female" />
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="465.0" layoutY="375.0" onAction="#btnDeleteOnAction" prefHeight="41.0" prefWidth="183.0" style="-fx-background-color: #2bfbff;" text="Delete Student">
+         <graphic>
+            <FontAwesomeIconView fill="RED" glyphName="TRASH" size="15" wrappingWidth="20.785714149475098" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="259.0" layoutY="375.0" onAction="#btnUpdateOnAction" prefHeight="41.0" prefWidth="183.0" style="-fx-background-color: #2bfbff;" text="Update Stuent">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="REFRESH" size="15" wrappingWidth="21.857142448425293" />
+         </graphic>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbStudent" focusColor="BLACK" layoutX="311.0" layoutY="92.0" prefHeight="25.0" prefWidth="173.0" unFocusColor="BLACK" />
+      <JFXDatePicker fx:id="Date" layoutX="310.0" layoutY="264.0" />
+      <JFXButton fx:id="btnAddStudent" buttonType="RAISED" layoutX="55.0" layoutY="375.0" onAction="#btnAddStudentOnAction" prefHeight="41.0" prefWidth="183.0" style="-fx-background-color: #2bfbff;" text="Add Student">
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="15" wrappingWidth="23.0" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></JFXButton>
+      <Text fill="RED" layoutX="323.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IJSE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
